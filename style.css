@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Mooli&display=swap');
+
+:root {
+  /* Fonts */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Mooli', sans-serif;
+
+  /* Colors */
+  --color-light: #f8f7f5;
+  --color-accent: #ef9881;
+  --color-dark: #20150f;
+
+  /* Text Colors */
+  --text-dark: var(--color-dark);
+  --text-light: var(--color-white);
+
+  /* Font Sizes */
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 28px;
+  --font-size-text-sm: 14px;
+  --font-size-text-lg: 18px;
+
+  /* Spacings */
+  --spacing-xl: 50px;
+  --spacing-lg: 30px;
+  --spacing-md: 20px;
+  --spacing-sm: 10px;
+  --spacing-xs: 5px;
+
+  --margin-section: 130px;
+
+  /* Borders */
+  --radius-md: 5px;
+  --radius-lg: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--font-secondary);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+body {
+  background-color: var(--bg-light);
+}
+
+#app {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}

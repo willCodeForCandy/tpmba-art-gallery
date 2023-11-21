@@ -1,0 +1,41 @@
+.filter-section {
+  padding: var(--spacing-lg);
+  justify-content: center;
+  background-color: var(--color-accent);
+  position: sticky;
+  top: 0;
+  width: 215px;
+}
+
+button {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+}
+
+select {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+}
+
+input[type='number'] {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-dark);
+  width: 70px;
+  margin-right: var(--spacing-xs);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
