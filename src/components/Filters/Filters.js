@@ -37,21 +37,19 @@ export const renderFilters = (parentElement) => {
   }
 };
 
-export const filterBySeller = (e) => {
-  if (e.target.value === 'Todos') {
-    renderGallery(products);
-  } else {
-    const filteredProducts = products.filter(
-      (product) => product.artist === e.target.value
+export const filterProducts = () => {
+  let filteredProducts = [];
+  if (sellerSelect.value === 'Todos') {
+    filteredProducts = products.filter(
+      (product) => product.price <= priceInput.value
     );
-    renderGallery(filteredProducts);
+  } else {
+    filteredProducts = products.filter(
+      (product) =>
+        product.price <= priceInput.value &&
+        product.artist === sellerSelect.value
+    );
   }
-};
-
-export const searchByPrice = () => {
-  const filteredProducts = products.filter(
-    (product) => product.price <= priceInput.value
-  );
   renderGallery(filteredProducts);
 };
 
