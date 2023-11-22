@@ -5,7 +5,7 @@ export const products = [
     stars: 5,
     reviews: 10,
     artist: 'Paje Honor',
-    url: 'public/assets/flores-dark.jpg'
+    url: '/assets/flores-dark.jpg'
   },
   {
     name: 'Happy Halloween!',
@@ -13,7 +13,7 @@ export const products = [
     stars: 4.0,
     reviews: 8,
     artist: 'Catherine Vo',
-    url: 'public/assets/halloween.webp'
+    url: '/assets/halloween.webp'
   },
   {
     name: 'How to make vegetable stock',
@@ -21,7 +21,7 @@ export const products = [
     stars: 4.2,
     reviews: 12,
     artist: 'Felicita sala',
-    url: 'public/assets/cooking.jpg'
+    url: '/assets/cooking.jpg'
   },
   {
     name: 'Orange tea',
@@ -29,7 +29,7 @@ export const products = [
     stars: 4.7,
     reviews: 15,
     artist: 'Colorhood',
-    url: 'public/assets/tecito.jpg'
+    url: '/assets/tecito.jpg'
   },
   {
     name: 'Rainy day',
@@ -37,7 +37,7 @@ export const products = [
     stars: 3.8,
     reviews: 7,
     artist: 'Colorhood',
-    url: 'public/assets/rainy-day.jpg'
+    url: '/assets/rainy-day.jpg'
   },
   {
     name: 'Terrarium',
@@ -45,7 +45,7 @@ export const products = [
     stars: 4.9,
     reviews: 20,
     artist: 'Joy Laforme',
-    url: 'public/assets/house.jpg'
+    url: '/assets/house.jpg'
   },
   {
     name: 'A Promise',
@@ -53,7 +53,7 @@ export const products = [
     stars: 4.1,
     reviews: 9,
     artist: 'Joy Laforme',
-    url: 'public/assets/rainbow.webp'
+    url: '/assets/rainbow.webp'
   },
   {
     name: 'Terrarium III',
@@ -61,7 +61,7 @@ export const products = [
     stars: 4.3,
     reviews: 11,
     artist: 'Joy Laforme',
-    url: 'public/assets/terrarium.webp'
+    url: '/assets/terrarium.webp'
   },
   {
     name: 'Terrarium Home Sweet Home',
@@ -69,7 +69,7 @@ export const products = [
     stars: 4.6,
     reviews: 14,
     artist: 'Joy Laforme',
-    url: 'public/assets/mouse.webp'
+    url: '/assets/mouse.webp'
   },
   {
     name: 'Repeating Patterns',
@@ -77,7 +77,7 @@ export const products = [
     stars: 3.9,
     reviews: 8,
     artist: 'Aurora',
-    url: 'public/assets/despensa.jpg'
+    url: '/assets/despensa.jpg'
   },
   {
     name: 'Witchy woman',
@@ -85,7 +85,7 @@ export const products = [
     stars: 4.4,
     reviews: 13,
     artist: 'Paje Honor',
-    url: 'public/assets/witch.jpg'
+    url: '/assets/witch.jpg'
   },
   {
     name: 'Fall Feelings',
@@ -93,6 +93,6 @@ export const products = [
     stars: 4.2,
     reviews: 10,
     artist: 'Paje Honor',
-    url: 'public/assets/hongo.jpg'
+    url: '/assets/hongo.jpg'
   }
 ];

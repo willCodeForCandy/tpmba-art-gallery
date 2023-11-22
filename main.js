@@ -15,7 +15,7 @@ divApp.append(gallerySection);
 renderGallery(products);
 
 const sellerSelect = document.querySelector('#sellerSearch');
-const handleSelect = (e) => {
+const filterBySeller = (e) => {
   console.log(e.target.value);
   if (e.target.value === 'Todos') {
     renderGallery(products);
@@ -26,4 +26,4 @@ const handleSelect = (e) => {
     renderGallery(filteredProducts);
   }
 };
-sellerSelect.addEventListener('change', handleSelect);
+sellerSelect.addEventListener('change', filterBySeller);

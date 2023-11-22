@@ -34,3 +34,15 @@ export const renderFilters = (parentElement) => {
     sellerSelect.append(option);
   }
 };
+
+export const filterBySeller = (e) => {
+  console.log(e.target.value);
+  if (e.target.value === 'Todos') {
+    renderGallery(products);
+  } else {
+    const filteredProducts = products.filter(
+      (product) => product.artist === e.target.value
+    );
+    renderGallery(filteredProducts);
+  }
+};
