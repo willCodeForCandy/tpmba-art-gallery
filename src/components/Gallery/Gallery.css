@@ -1,3 +1,10 @@
 .gallery-section {
   padding: var(--spacing-sm);
 }
+@media (max-width: 400px) {
+  .gallery-section {
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+}

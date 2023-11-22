@@ -1,3 +1,4 @@
+import { priceInput, sellerSelect } from '../../../main';
 import { products } from '../../data/products';
 import { renderGallery } from '../Gallery/Gallery';
 import './Filters.css';
@@ -48,9 +49,14 @@ export const filterBySeller = (e) => {
 };
 
 export const searchByPrice = () => {
-  const priceInput = document.querySelector('#maxPrice');
   const filteredProducts = products.filter(
     (product) => product.price <= priceInput.value
   );
   renderGallery(filteredProducts);
+};
+
+export const clearFilters = () => {
+  priceInput.value = '';
+  sellerSelect.value = 'Todos';
+  renderGallery(products);
 };
