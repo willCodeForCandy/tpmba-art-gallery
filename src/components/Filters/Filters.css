@@ -1,11 +1,14 @@
+section:first-child {
+  flex: 0 0 215px;
+  position: sticky;
+  top: 0;
+}
 .filter-section {
   padding: var(--spacing-lg);
   justify-content: center;
   background-color: var(--color-accent);
-  position: sticky;
-  top: 0;
-  flex: 0 0 215px;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  border-radius: 0 var(--radius-md) 0 0;
+  margin-top: var(--spacing-sm);
 }
 
 button {
@@ -39,4 +42,38 @@ input:focus {
 
 input[type='number'] {
   -moz-appearance: textfield;
+}
+
+.applied-filters {
+  padding: var(--spacing-md);
+  box-sizing: content-box;
+  gap: var(--spacing-sm);
+  background-color: rgb(211, 211, 211);
+  border-radius: 0 0 var(--radius-md) 0;
+}
+.filter-tag {
+  background-color: rgb(158, 158, 158);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-text-sm);
+  /* margin: var(--spacing-md); */
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  section:first-child {
+    position: relative;
+  }
+  .filter-section {
+    border-radius: 0;
+  }
+  .applied-filters {
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+  }
 }
