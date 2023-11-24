@@ -54,6 +54,7 @@
 
 body {
   background-color: var(--bg-light);
+  min-height: 100svh;
 }
 
 #app {
