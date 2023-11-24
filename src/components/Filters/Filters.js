@@ -39,16 +39,24 @@ export const renderFilters = (parentElement) => {
 
 export const filterProducts = () => {
   let filteredProducts = [];
-  if (sellerSelect.value === 'Todos') {
-    filteredProducts = products.filter(
-      (product) => product.price <= priceInput.value
-    );
-  } else {
+  const hasPriceSearch = priceInput.value ? true : false;
+  const hasSellerSearch = sellerSelect.value === 'Todos' ? false : true;
+  if (hasSellerSearch && hasPriceSearch) {
     filteredProducts = products.filter(
       (product) =>
         product.price <= priceInput.value &&
         product.artist === sellerSelect.value
     );
+  } else if (hasSellerSearch && !hasPriceSearch) {
+    filteredProducts = products.filter(
+      (product) => product.artist === sellerSelect.value
+    );
+  } else if (!hasSellerSearch && hasPriceSearch) {
+    filteredProducts = products.filter(
+      (product) => product.price <= priceInput.value
+    );
+  } else {
+    filteredProducts = products;
   }
   renderGallery(filteredProducts);
 };
